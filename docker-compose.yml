@@ -1,0 +1,60 @@
+version: '3.7'
+
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
+    volumes:
+      - static_volume:/app/backend/static
+      - static_client:/app/frontend/build
+    depends_on:
+      - web
+      - client
+    restart: "on-failure"
+  client:
+    container_name: client
+    build: ./client
+    volumes:
+      - .:/frontend:rw
+      - static_client:/app/frontend/build
+    ports:
+            - 3000:3000
+    depends_on: 
+      - web
+    restart: "on-failure"
+  web:
+    build: ./backend #build the image for the web service from the dockerfile in parent directory
+    command: sh -c "python manage.py makemigrations &&
+                    python manage.py migrate &&
+                    python manage.py collectstatic --noinput &&
+                    gunicorn core.wsgi:application --bind 0.0.0.0:8000"
+    volumes:
+      - .:/backend:rw # map data and files from parent directory in host to backend directory in docker containe
+      - static_volume:/app/backend/static
+    ports:
+      - 8000:8000
+    env_file:
+      - .env
+    image: core
+
+    restart: "on-failure"
+    depends_on:
+      - db
+  db:
+    image: postgres:11-alpine
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+      - PGPORT=${DB_PORT}
+      - POSTGRES_USER=${POSTGRES_USER}
+    restart: "on-failure"
+
+
+volumes:
+  postgres_data:
+  static_volume:
+  static_client:
