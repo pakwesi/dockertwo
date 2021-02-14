@@ -31,8 +31,7 @@ export default DesignInfoSection;
 
 const DesignInfoSectionContainer = styled.div`
 
-    margin: 4rem;
-    position: relative;
+    margin: 1rem;
 
 
     .titledesign {
@@ -65,6 +64,8 @@ const DesignInfoSectionContainer = styled.div`
         display: grid;
         grid-template-columns: repeat(30, 1fr);
         position: relative;
+        width: 100%;
+        overflow: hidden;
     }
 
 

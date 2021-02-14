@@ -19,9 +19,9 @@ class LeftMenu extends Component {
     return (
    <Menu mode="horizontal">
        <Menu.Item key="mail">
-          <a href=""><NavLink className='option' to='/'>
+          <NavLink className='option' to='/'>
           <IconI className="Icon" icon={fortAwesome} size={22} />
-        </NavLink></a>
+        </NavLink>
         </Menu.Item>
         <Menu.Item key="setting:1"><NavLink className='option' to='/about'>
                 <IconI className="Icon" icon={addressCard} size={22} />

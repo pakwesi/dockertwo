@@ -13,11 +13,11 @@ const TextSection = () => {
                 <div className="p">
                     P
                 </div>
-                <div class="buttons">
-                <div class="container">
+                <div className="buttons">
+                <div className="container">
                     <h1>歪みエフェクト</h1>
                     <p>Distortion Effect</p>
-                    <a href="https://twitter.com/masuwa1018" class="btn effect04" data-sm-link-text="CLICK" target="_blank"><span>HOVER</span></a>
+                    <a href="https://twitter.com/masuwa1018" className="btn effect04" data-sm-link-text="CLICK" target="_blank"><span>HOVER</span></a>
                 </div>
                 </div>
 

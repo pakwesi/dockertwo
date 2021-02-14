@@ -25,7 +25,7 @@ render() {
       <NavbarHeaderContainer>
       <nav className="menuBar">
           <div className="logo">
-            <a href="">PK</a>
+            <a href="/">PK</a>
           </div>
           <div className="menuCon">
             <div className="leftMenu">
@@ -38,7 +38,7 @@ render() {
               <span className="barsBtn"></span>
             </Button>
             <Drawer
-              title="Basic Drawer"
+              title="PkCreative"
               placement="right"
               closable={false}
               onClose={this.onClose}

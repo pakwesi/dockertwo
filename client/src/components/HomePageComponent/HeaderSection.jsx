@@ -18,17 +18,17 @@ const HeaderSection = () => {
                 Start planning your next 30 years in 30 seconds
             </div>
             <div className="gridbutton">
-            <a href="#">
+            <a href="/about">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                <Link to="/about" />
+                
                 Learn About Us
             </a>
             </div>
             
-            <a class="Follow" href="https://github.com/pakwesi" target="blank_"></a>
+            <a className="Follow" href="https://github.com/pakwesi" target="blank_"></a>
         </SectionContainer>
     )
 }
@@ -117,6 +117,8 @@ const SectionContainer = styled.section`
             letter-spacing: 3px;
             transform: translate(-50%, -50%);
             text-transform: uppercase;
+            max-width: 100%;
+            overflow-x: hidden;
             box-shadow: 0px 20px 50px #000000ab;
                 overflow:hidden;
 

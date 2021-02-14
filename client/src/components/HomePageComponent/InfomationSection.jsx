@@ -4,13 +4,13 @@ import styled from 'styled-components'
 const InfomationSection = ({ text }) => {
     return (
         <InformationSectionContainer>
-        <div class="row">
-        <div class="column">
+        <div className="row">
+        <div className="column">
         <div id="wrapper">
             <img id="blurred" src="https://images.unsplash.com/photo-1503631285924-e1544dce8b28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
             <img id="cover" src="https://images.unsplash.com/photo-1503631285924-e1544dce8b28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
           </div></div>
-        <div class="column">
+        <div className="column">
       <div id="wrapper">
             <img id="blurred" src="https://images.unsplash.com/photo-1486546910464-ec8e45c4a137?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=651&q=80" alt="" />
             <img id="cover" src="https://images.unsplash.com/photo-1486546910464-ec8e45c4a137?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=651&q=80" alt="" />

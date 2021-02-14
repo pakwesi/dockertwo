@@ -61,6 +61,7 @@ const AboutIntroSectionContainer = styled.div`
         display: grid;
         grid-template-columns: repeat(30, 1fr);
         position: relative;
+        
     }
 
 

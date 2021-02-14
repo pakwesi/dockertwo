@@ -4,12 +4,12 @@ import styled from 'styled-components';
 const TextAniSection = () => {
     return (
         <TextAniSectionContainer>
-        <section class="section-title" id="section-title">
+        <section className="section-title" id="section-title">
 
-          <div class="container">
-              <h2 class="title">Look for the Creative Studio</h2>
-              <div class="buttons">
-                  <button class="effects">
+          <div className="container">
+              <h2 className="title">Look for the Creative Studio</h2>
+              <div className="buttons">
+                  <button className="effects">
                       <p>How?</p>
                   </button>
               </div>

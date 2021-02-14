@@ -12,11 +12,11 @@ const PriceCards = () => {
     return (
         <PriceCardsContainer>
         
-        <div class="flip-card-container ">
-          <div class="flip-card grid1">
-            <div class="card-front">
+        <div className="flip-card-container ">
+          <div className="flip-card grid1">
+            <div className="card-front">
               <figure>
-                <div class="img-bg"></div>
+                <div className="img-bg"></div>
                 <img src={img15} alt="Brohm Lake" />
                 <figcaption>Basic</figcaption>
               </figure>
@@ -30,35 +30,35 @@ const PriceCards = () => {
               </ul>
             </div>
         
-            <div class="card-back">
+            <div className="card-back">
               <figure>
-                <div class="img-bg"></div>
+                <div className="img-bg"></div>
                 <img src={img16} alt="Brohm Lake" />
               </figure>
         
               <button>Book</button>
         
-              <div class="design-container">
-                <span class="design design--1"></span>
-                <span class="design design--2"></span>
-                <span class="design design--3"></span>
-                <span class="design design--4"></span>
-                <span class="design design--5"></span>
-                <span class="design design--6"></span>
-                <span class="design design--7"></span>
-                <span class="design design--8"></span>
+              <div className="design-container">
+                <span className="design design--1"></span>
+                <span className="design design--2"></span>
+                <span className="design design--3"></span>
+                <span className="design design--4"></span>
+                <span className="design design--5"></span>
+                <span className="design design--6"></span>
+                <span className="design design--7"></span>
+                <span className="design design--8"></span>
               </div>
             </div>
         
           </div>
         </div>
         
-        <div class="flip-card-container" >
-          <div class="flip-card grid2">
+        <div className="flip-card-container" >
+          <div className="flip-card grid2">
         
-            <div class="card-front">
+            <div className="card-front">
               <figure>
-                <div class="img-bg"></div>
+                <div className="img-bg"></div>
                 <img src={img8} alt="Image 2" />
                 <figcaption>Popular</figcaption>
               </figure>
@@ -72,23 +72,23 @@ const PriceCards = () => {
               </ul>
             </div>
         
-            <div class="card-back">
+            <div className="card-back">
               <figure>
-                <div class="img-bg"></div>
+                <div className="img-bg"></div>
                 <img src={img} alt="image-2" />
               </figure>
         
               <button>Book</button>
         
-              <div class="design-container">
-                <span class="design design--1"></span>
-                <span class="design design--2"></span>
-                <span class="design design--3"></span>
-                <span class="design design--4"></span>
-                <span class="design design--5"></span>
-                <span class="design design--6"></span>
-                <span class="design design--7"></span>
-                <span class="design design--8"></span>
+              <div className="design-container">
+                <span className="design design--1"></span>
+                <span className="design design--2"></span>
+                <span className="design design--3"></span>
+                <span className="design design--4"></span>
+                <span className="design design--5"></span>
+                <span className="design design--6"></span>
+                <span className="design design--7"></span>
+                <span className="design design--8"></span>
               </div>
             </div>
         
@@ -96,12 +96,12 @@ const PriceCards = () => {
         </div>
       
 
-        <div class="flip-card-container" >
-          <div class="flip-card grid3">
+        <div className="flip-card-container" >
+          <div className="flip-card grid3">
         
-            <div class="card-front">
+            <div className="card-front">
               <figure>
-                <div class="img-bg"></div>
+                <div className="img-bg"></div>
                 <img src={img10} alt="Brohm Lake" />
                 <figcaption>Advanced</figcaption>
               </figure>
@@ -115,25 +115,25 @@ const PriceCards = () => {
               </ul>
             </div>
         
-            <div class="card-back">
+            <div className="card-back">
               
               <figure>
-                <div class="img-bg"></div>
+                <div className="img-bg"></div>
                 <img src={img14} alt="Brohm Lake" />
               </figure>
         
               <button>Book</button>
         
               
-              <div class="design-container">
-                <span class="design design--1"></span>
-                <span class="design design--2"></span>
-                <span class="design design--3"></span>
-                <span class="design design--4"></span>
-                <span class="design design--5"></span>
-                <span class="design design--6"></span>
-                <span class="design design--7"></span>
-                <span class="design design--8"></span>
+              <div className="design-container">
+                <span className="design design--1"></span>
+                <span className="design design--2"></span>
+                <span className="design design--3"></span>
+                <span className="design design--4"></span>
+                <span className="design design--5"></span>
+                <span className="design design--6"></span>
+                <span className="design design--7"></span>
+                <span className="design design--8"></span>
               </div>
             </div>
         

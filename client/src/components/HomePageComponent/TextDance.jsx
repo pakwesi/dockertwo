@@ -4,27 +4,27 @@ import styled from 'styled-components'
 const TextDance = () => {
     return (
         <TextDanceContainer>
-        <div class="planet-holder">
-        <div class="planet">
-            <div class="cloud"></div>
-            <div class="cloud"></div>
-            <div class="cloud"></div>
-            <div class="cloud"></div>
-            <div class="cloud"></div>
-            <div class="cloud"></div>
+        <div className="planet-holder">
+        <div className="planet">
+            <div className="cloud"></div>
+            <div className="cloud"></div>
+            <div className="cloud"></div>
+            <div className="cloud"></div>
+            <div className="cloud"></div>
+            <div className="cloud"></div>
         </div>
 
-        <div class="outer">
-            <div class="outerClouds"></div>
-            <div class="outerClouds"></div>
-            <div class="outerClouds"></div>
-            <div class="outerClouds"></div>
-            <div class="outerClouds"></div>
-            <div class="outerClouds"></div>
-            <div class="outerClouds"></div>
+        <div className="outer">
+            <div className="outerClouds"></div>
+            <div className="outerClouds"></div>
+            <div className="outerClouds"></div>
+            <div className="outerClouds"></div>
+            <div className="outerClouds"></div>
+            <div className="outerClouds"></div>
+            <div className="outerClouds"></div>
         </div>
 
-        <div class="text">OPEN SOURCE PROJECT</div>
+        <div className="text">OPEN SOURCE PROJECT</div>
         </div>
         </TextDanceContainer>
     )

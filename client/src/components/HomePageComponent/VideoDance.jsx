@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const VideoDance = () => {
     return (
         <VideoDanceContainer>
-        <h1 class="text">Rotterdam</h1>
+        <h1 className="text">Rotterdam</h1>
         </VideoDanceContainer>
     )
 }
