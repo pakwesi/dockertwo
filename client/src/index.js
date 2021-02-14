@@ -20,7 +20,7 @@ import MusicPage from './pages/MusicPage/MusicPage.component';
 
 const cache = new InMemoryCache();
 const link = createUploadLink({
-  uri: "http://178.62.236.34:8000/graphql/"
+  uri: "http://68.183.0.26:8000/graphql/"
 });
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
@@ -65,10 +65,7 @@ query {
 
 `
 
-client.query({ query })
-  .then((response) => {
-    console.log(response.data)
-  })
+
 
 function IsLoggedIn() {
   const { data } = useQuery(IS_LOGGED_IN);
