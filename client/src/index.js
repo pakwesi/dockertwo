@@ -20,7 +20,7 @@ import MusicPage from './pages/MusicPage/MusicPage.component';
 
 const cache = new InMemoryCache();
 const link = createUploadLink({
-  uri: "http://206.189.105.5:8000/graphql/"
+  uri: "http://167.99.41.232:8000/graphql/"
 });
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists

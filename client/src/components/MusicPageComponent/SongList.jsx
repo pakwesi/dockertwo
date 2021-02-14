@@ -72,7 +72,7 @@ const SongList = () => {
             <Media>
                   <div className="media">
                     <div className="media-player">
-                      <Player onDuration src={"http://206.189.105.5:8000/graphql/media/" + detailsMusic[i].file} />
+                      <Player onDuration src={"http://167.99.41.232:8000/graphql/media/" + detailsMusic[i].file} />
                     </div>
                     <div className="media-controls">
                     
@@ -83,7 +83,7 @@ const SongList = () => {
             style={{ width: 300 }}
             cover={
               <div classname="card-image">
-              <img key={i} src={"http://206.189.105.5:8000/graphql/media/" + detailsImage[i].file} alt={detailsImage[i].file} />
+              <img key={i} src={"http://167.99.41.232:8000/graphql/media/" + detailsImage[i].file} alt={detailsImage[i].file} />
               </div>
             }
             actions={[
