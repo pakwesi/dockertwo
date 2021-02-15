@@ -51,10 +51,7 @@ const Register = ({ setError }) => {
            const { message } = error.networkError
            console.log(message) // e.g. NetworkError when attempting to fetch resource.
        }
-},
-    onCompleted(createPerson) {
-      console.log(createPerson);
-    }
+}
   })
 
   const submit = (event) => {
@@ -190,6 +187,7 @@ const LogContainer = styled.section`
   outline: 0;
   transition: .2s;
   margin-top: 20px;
+  color: black;
 }
 
 .form-field:focus {

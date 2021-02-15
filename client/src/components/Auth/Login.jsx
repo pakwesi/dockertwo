@@ -47,7 +47,6 @@ const Login = ({ setError, setToken }) => {
         onCompleted( tokenAuth) {
           localStorage.setItem("token", tokenAuth.tokenAuth.token);
           
-          console.log(tokenAuth.tokenAuth.token);
         }
       }
     );
@@ -72,31 +71,31 @@ const Login = ({ setError, setToken }) => {
     return (
     <div>
     <LogContainer>
-    <div class="container">
+    <div className="container">
     <form 
     >
-    <div class="left">
-      <div class="header">
-        <h2 class="animation a1">Welcome Back</h2>
-        <h4 class="animation a2">Log in to your account using email and password</h4>
+    <div className="left">
+      <div className="header">
+        <h2 className="animation a1">Welcome Back</h2>
+        <h4 className="animation a2">Log in to your account using email and password</h4>
       </div>
-      <div class="form">
-        <input type="text" class="form-field animation a3" placeholder="name" 
+      <div className="form">
+        <input type="text" className="form-field animation a3" placeholder="name" 
         value={username}
         onChange={({ target }) => setUsername(target.value)}
         />
-        <input type="password" class="form-field animation a4" placeholder="Password"
+        <input type="password" className="form-field animation a4" placeholder="Password"
         value={password}
         onChange={({ target }) => setPassword(target.value)}
         />
-        <p class="animation a5"><a href="#">Forgot Password</a></p>
-        <button class="animation a6" type='submit'
+        <p className="animation a5"><a href="#">Forgot Password</a></p>
+        <button className="animation a6" type='submit'
         onClick={submit}
         >LOGIN</button>
       </div>
     </div>
     </form>
-    <div class="right"></div>
+    <div className="right"></div>
   </div>
   
     </LogContainer>
@@ -181,6 +180,7 @@ const LogContainer = styled.section`
   outline: 0;
   transition: .2s;
   margin-top: 20px;
+  color: black;
 }
 
 .form-field:focus {

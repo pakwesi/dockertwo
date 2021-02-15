@@ -698,4 +698,39 @@ padding: 10px 20px;
 /* Styles */
 }
 
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+    .gridtext {
+
+font-weight: 300;
+font-size: 0.8em;
+line-height: 1em;
+padding: 1rem;
+}
+
+.title {
+font-size: 1em;
+padding: 1rem;
+}
+
+.gridbutton {
+
+a {
+top: 30%;
+left: 50%;
+font-size: 7px;
+padding: 10px 20px;
+
+}
+
+}
+
+img {
+object-fit: cover; max-width: 50%;
+}
+}
+
 `;
